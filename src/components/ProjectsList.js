@@ -14,7 +14,6 @@ const ProjectsList = () => {
         description
         techStack
         githubLink
-        devpostLink
         projectImageCollection{
           items {
             url
@@ -39,8 +38,12 @@ const ProjectsList = () => {
           }),
         }
       )
-      .then((response) => response.json())
-      .then((json) => setProjects(json.data.projectsCollection.items));
+      .then((response) => {
+        return response.json()
+      })
+      .then((json) => {
+        setProjects(json.data.projectsCollection.items)
+      });
   }, [query, accessToken, spaceId]);
 
   if (!projects) return null;
