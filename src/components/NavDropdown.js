@@ -41,7 +41,7 @@ const NavDropdown = ({ isOpen, toggle }) => {
       </Link> */}
       <Link
         className="p-4"
-        to="/static/Kojo Obeng-Arhin - Resume.pdf"
+        to="/static/Kojo Obeng-Arhin Resume.pdf"
         target="_blank"
       >
         <button className="bg-gray-800 hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 rounded-lg px-4 py-2 text-center">
