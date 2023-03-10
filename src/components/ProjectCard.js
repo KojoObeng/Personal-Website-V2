@@ -1,5 +1,4 @@
 import Tag from "./Tag";
-import { SiDevpost, SiGithub } from "react-icons/si";
 
 const ProjectCard = (props) => {
   return (
